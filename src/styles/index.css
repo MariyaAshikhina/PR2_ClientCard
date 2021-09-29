@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bodyContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.content {
+    background: url('../assets/blur_background.jpg');
+    position: absolute;
+    flex: 1;
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+.contentContainer {
+    flex: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    background-color: white;
+}
+
+.background {
+    resize: both;
+    width: 290px;
+    height: 245px;
+    z-index: 1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+
+.profile {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 7px;
+    border-radius: 100px;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.name {
+    font-size: 26px;
+    color: rgb(50, 50, 56);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(141, 141, 141);
+    margin: 0px 0px 3px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    width: 135px;
+    padding-bottom: 7%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.icon {
+    color: rgb(141, 141, 141);
+    font-size: 25px;
+}
